@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menubar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menubar li {
+    display: inline-block;
+}
+
+.menubar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .menubar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menubar.active {
+        display: flex;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+
+
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <h1 class="changeColor">MY PORTFOLIO</h1>
+        </div>
+        <div class="mobile-nav" id="mobileMenu">
+            <svg viewBox="0 0 100 80" width="30" height="30">
+                <rect width="100" height="10"></rect>
+                <rect y="30" width="100" height="10"></rect>
+                <rect y="60" width="100" height="10"></rect>
+            </svg>
+        </div>
+        <ul class="menubar changeColor" id="navLinks">
+            <li id="darkLight">
+                <i id="icon" class="bi bi-sun-fill" style="color: yellow; font-size: 30px;"></i>
+            </li>
+            <li class="changeColor"><a class="changeColor" href="#about">ABOUT</a></li>
+            <li class="changeColor"><a class="changeColor" href="#skill">SKILLS</a></li>
+            <li class="changeColor"><a class="changeColor" href="#portfolio">PORTFOLIO</a></li>
+            <li class="changeColor"><a class="changeColor" href="#contact">CONTACT</a></li>
+            <li class="changeColor">
+                <a class="btn-download changeColor" target="_blank" rel="noopener noreferrer" href="Zohaib Khan.pdf">
+                    RESUME
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileNav = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
+
+    mobileNav.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+});
+
+</script>
+</body>
+</html>

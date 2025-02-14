@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <style data-href="/styles.ded47dfc3c6f8bbfcefb.css">
+        @import url(https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap);
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
+
+
+
+
+        .contact-section {
+            background-color: transparent;
+            border-radius: 10px;
+        }
+
+        .form-label i {
+            color: #007bff;
+            margin-right: 5px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background: transparent;
+            /* Keep website's background */
+            background-color: #1d293a
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer p {
+            margin-top: 80px;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .icon-link {
+            font-size: 44px;
+            margin-bottom: 10px;
+            color: inherit;
+            /* Keeps icon color same as text */
+            transition: color 0.3s ease;
+        }
+
+        .icon-link:hover {
+            color: #0077b5;
+            /* Change for different icons if needed */
+        }
+    </style>
+    <link rel="stylesheet" href="home.css">
+    <meta name="generator" content="Gatsby 2.24.49" />
+    <title data-react-helmet="true">Zohaib khan | Frontend Web Developer</title>
+    <meta data-react-helmet="true" name="description" content="My personal portfolio website" />
+    <meta data-react-helmet="true" property="og:title" content="Zohaib khan" />
+    <meta data-react-helmet="true" property="og:description" content="My personal portfolio website" />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta data-react-helmet="true" property="og:image"
+        content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAKjCAMAAAA6bQbyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3tpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5N0E0NjVBNDg2RjUxMUU5QkRFNjg4NzJCMEE4NzlDRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2MjYyRkU5MEVBOUMxMUU5OEVCMTlBMDc4RDk5MDI0QiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2MjYyRkU4RkVBOUMxMUU5OEVCMTlBMDc4RDk5MDI0QiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6YTBhYWNmZDEtZGU4MS1hMTQ3LWJlM2QtNTc3NTQ2YTc4OGMxIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MDZkMGMxMTEtMzllMi0yNTQ5LTlkODItNWM3MjFhYWMz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" />
+    <meta data-react-helmet="true" property="og:image:secure_url"
+        content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAKjCAMAAAA6bQbyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3tpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5N0E0NjVBNDg2RjUxMUU5QkRFNjg4NzJCMEE4NzlDRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2MjYyRkU5MEVBOUMxMUU5OEVCMTlBMDc4RDk5MDI0QiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2MjYyRkU4RkVBOUMxMUU5OEVCMTlBMDc4RDk5MDI0QiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6YTBhYWNmZDEtZGU4MS1hMTQ3LWJlM2QtNTc3NTQ2YTc4OGMxIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MDZkMGMxMTEtMzllMi0yNTQ5LTlkODItNWM3MjFhYWMz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" />
+    <meta data-react-helmet="true" property="og:image:width" content="1200" />
+    <meta data-react-helmet="true" property="og:image:height" content="675" />
+    <meta data-react-helmet="true" name="twitter:card" content="summary" />
+    <meta data-react-helmet="true" name="twitter:creator" content="@zohaib khan" />
+    <meta data-react-helmet="true" name="twitter:title" content="Zohaib Khan" />
+    <meta data-react-helmet="true" name="twitter:description" content="My personal portfolio website" />
+    <link rel="icon" href="Safeimagekit-resized-img.jpg" type="image/png" />
+    <link rel="manifest" href="Safeimagekit-resized-img.jpg" />
+    <meta name="theme-color" content="#1d293a" />
+    <link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=ce542622b91b6930e1f901887ca1b270" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=ce542622b91b6930e1f901887ca1b270" />
+    <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=ce542622b91b6930e1f901887ca1b270" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=ce542622b91b6930e1f901887ca1b270" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=ce542622b91b6930e1f901887ca1b270" />
+    <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=ce542622b91b6930e1f901887ca1b270" />
+    <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=ce542622b91b6930e1f901887ca1b270" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=ce542622b91b6930e1f901887ca1b270" />
+    <link as="script" rel="preload" href="/webpack-runtime-e70f41d2746859ee9c2c.js" />
+    <link as="script" rel="preload" href="/framework-fd2b85530eec85104a39.js" />
+    <link as="script" rel="preload" href="/app-ba68181312375a78c2ea.js" />
+    <link as="script" rel="preload" href="/styles-2d82ac8e3afc0c213061.js" />
+    <link as="script" rel="preload" href="/1bfc9850-1153522eb3af6586f5e1.js" />
+    <link as="script" rel="preload" href="/commons-dbe3146c4d8d56917290.js" />
+    <link as="script" rel="preload" href="/component---src-pages-index-js-41909d2d5675f1ea9190.js" />
+    <link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="anonymous" />
+    <link as="fetch" rel="preload" href="/page-data/sq/d/3649515864.json" crossorigin="anonymous" />
+    <link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous" />
+    <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+
+
+
+
+            <header>
+                <div style="padding:25px 25px" class="container changeColor">
+                    <div class="header">
+                        <div class="logo">
+                            <h1 class="changeColor">MY PORTFOLIO</h1>
+                        </div>
+                        <div class="mobile-nav"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                                </path>
+                            </svg></div>
+                        <ul class="menubar changeColor">
+                            <li id="darkLight"><i id="icon" class="bi bi-sun-fill"
+                                    style="color: yellow; font-size: 50px;"></i></li>
+
+
+                            <li class="changeColor"><a class="changeColor" href="#about">ABOUT </a></li>
+                            <li class="changeColor"><a class="changeColor" href="#skill">SKILLS</a></li>
+                            <li class="changeColor"><a class="changeColor" href="#portfolio">PORTFOLIO</a></li>
+                            <li class="changeColor"><a class="changeColor" href="#contact">CONTACT</a></li>
+                            <!--     <li><a target="__blank" rel="noopener noreferrer" href="">Blog</a>
+                            </li>-->
+                            <li class="changeColor"><a class="btn-download changeColor" target="_blank"
+                                    rel="noopener noreferrer" href="Zohaib Khan.pdf">RESUME</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div>
+                <main>
+                    <div class="intro-area">
+                        <div style="height:360px" class="title right social">
+                            <ul class="social-links" style="font-size: 26px; ">
+                                <li></li>
+                                <li></li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://www.linkedin.com/in/zohaib-khan">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 448 512" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.11 108.1 0 83.7 0 53.79S24.11 0 53.79 0s53.79 24.1 53.79 53.79-24.1 53.79-53.79 53.79zM447.9 448H355V302.4c0-34.7-1-79.2-48.2-79.2-48.2 0-55.6 37.7-55.6 76.6V448H158.6V148.9h89v40.8h1.3c12.4-23.5 42.7-48.2 87.9-48.2 94 0 111.4 61.9 111.4 142.3V448z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://github.com/Khan-1291/zohaibKhan">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 1024 1024" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M511.6 76c-238 0-431 193-431 431 0 190 123 351 295 408 22 4 30-9 30-20v-70c-120 26-146-58-146-58-20-52-49-66-49-66-40-27 3-27 3-27 44 3 67 46 67 46 40 67 105 48 130 36 4-29 15-47 27-58-96-10-197-48-197-214 0-47 17-86 45-116-5-11-20-54 4-112 0 0 37-12 120 44 35-10 74-15 112-15 38 0 77 5 112 15 83-56 120-44 120-44 24 58 9 101 4 112 28 30 45 69 45 116 0 166-101 204-197 214 16 14 30 41 30 83v123c0 11 8 24 30 20 172-57 295-218 295-408 0-238-193-431-431-431z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://facebook.com/your-profile">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 320 512" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M279.14 288l14.22-92.66h-88.91V140.29c0-25.35 12.42-50.06 52.24-50.06H293V6.26S264.43 0 236.07 0c-73.46 0-121.11 44.39-121.11 124.72v70.62H22.89V288h92.07v224h112V288z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:zohaibkhanwebdevolper@gmail.com">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 512 512" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M502.3 190.8c3.9-3.1 9.7-3.1 13.6 0s3.9 8.1 0 11.3l-233.6 181.3c-4.7 3.6-11.3 3.6-16 0L3.1 202.1c-3.9-3.1-3.9-8.1 0-11.3s9.7-3.1 13.6 0l228.8 177.5 228.8-177.5z">
+                                            </path>
+                                            <path
+                                                d="M502.3 190.8c3.9-3.1 9.7-3.1 13.6 0s3.9 8.1 0 11.3l-233.6 181.3c-4.7 3.6-11.3 3.6-16 0L3.1 202.1c-3.9-3.1-3.9-8.1 0-11.3s9.7-3.1 13.6 0l228.8 177.5 228.8-177.5z">
+                                            </path>
+                                            <path
+                                                d="M502.3 190.8c3.9-3.1 9.7-3.1 13.6 0s3.9 8.1 0 11.3l-233.6 181.3c-4.7 3.6-11.3 3.6-16 0L3.1 202.1c-3.9-3.1-3.9-8.1 0-11.3s9.7-3.1 13.6 0l228.8 177.5 228.8-177.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <i id="icon" class="bi bi-instagram" style=""><a
+                                        href="https://www.instagram.com/websitesspot/"></a></i></li>
+                                </li>
+                            </ul>
+
+                            <p>Stay in touch</p>
+                        </div>
+                        <div class="container">
+                            <div class="intro" style="margin-left: 3%;">
+                                <div class="intro-text">
+                                    <p class="">Hello! I am</p>
+                                    <h1 class="changeColor">ZOHAIB KHAN</h1>
+                                    <h3>FRONTEND WEB DEVELOPER</h3>
+                                    <ul>
+                                        <li class="changeColor">Web Developer</li>
+                                        <li class="changeColor">Programmer</li>
+                                        <li class="changeColor">Software Engineer</li>
+                                    </ul>
+                                    <div class="action"><a
+                                            style="color:rgba(255, 255, 255, 0.85);border-color:#cccf00;background-color: orangered"
+                                            target="__blank" rel="noopener noreferrer" class="btn"
+                                            href="Zohaib Khan.pdf">DOWNLOAD CV
+                                        </a><a
+                                            style="margin-left:15px;color:rgba(255, 255, 255, 0.85);border-color:#00cf5d;background-color:transparent"
+                                            target="" rel="" class="btn changeColor" href="#about">About Me</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="about-image myimage">
+                            <div class="image"><img alt="profile" src="Safeimagekit-resized-img.jpg" /></div>
+                        </div>
+                    </div>
+
+
+                    <div id="about" class="about-area">
+                        <div class="container">
+                            <div style="height:160px" class="title left ">
+                                <p>About Me</p>
+                            </div>
+                            <div class="about">
+                                <div class="about-details">
+                                    <p class="changeColor">Welcome to my digital home! I'm Zohaib Khan, a
+                                        passionate web developer and desighner on a mission to craft captivating digital
+                                        experiences that leave a lasting impression. Here, you'll discover a fusion of
+                                        creativity, innovation, and technical prowess, all aimed at bringing your
+                                        digital dreams to life.
+                                    </p>
+                                    <div class="about-action"><a
+                                            style="color:rgba(255, 255, 255, 0.85);border-color:#00cf5d;background-color: orangered"
+                                            target="_blank" rel="noopener noreferrer" class="btn"
+                                            href="Zohaib Khan.pdf">Get
+                                            Resume</a><a
+                                            style="margin-left:15px;color:rgba(255, 255, 255, 0.85);border-color:#00cf5d;background-color:transparent"
+                                            target="" rel="" class="btn changeColor" href="#skill">My Skills</a></div>
+                                </div>
+                                <div class="about-image">
+                                    <div class="image"><img alt="profile"
+                                            src="WhatsApp Image 2025-02-12 at 21.53.00_dd2d35ac.jpg" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="skill" class="skill-area">
+                        <div class="container">
+                            <div style="height:160px" class="title right ">
+                                <p>My Skills</p>
+                            </div>
+                            <div class="skills">
+                                <ul class="skill-nav">
+                                    <li class="active">Web</li>
+                                    <li class="changeColor">Others</li>
+                                    <li class="changeColor">Programming</li>
+                                    <li class="changeColor">Tools</li>
+                                </ul>
+                                <div class="skill">
+                                    <div class="card">
+                                        <h4>HTML</h4>
+                                        <p>99<!-- -->%</p>
+                                        <div style="width:99%" class="progress-ar"></div>
+                                    </div>
+                                    <div class="card">
+                                        <h4>JavaScript</h4>
+                                        <p>85<!-- -->%</p>
+                                        <div style="width:90%" class="progress-ar"></div>
+                                    </div>
+                                    <div class="card">
+                                        <h4>CSS</h4>
+                                        <p>95<!-- -->%</p>
+                                        <div style="width:95%" class="progress-ar"></div>
+                                    </div>
+                                    <div class="card">
+                                        <h4>Node JS</h4>
+                                        <p>70<!-- -->%</p>
+                                        <div style="width:70%" class="progress-ar"></div>
+                                    </div>
+                                    <div class="card">
+                                        <h4>BootStrap</h4>
+                                        <p>90<!-- -->%</p>
+                                        <div style="width:90%" class="progress-ar"></div>
+                                    </div>
+                                    <div class="card">
+                                        <h4>MongoDB</h4>
+                                        <p>80<!-- -->%</p>
+                                        <div style="width:80%" class="progress-ar"></div>
+                                    </div>
+                                    <div class="card">
+                                        <h4>MySQL</h4>
+                                        <p>80<!-- -->%</p>
+                                        <div style="width:80%" class="progress-ar"></div>
+                                    </div>
+                                </div>
+                                <section class="skills-section">
+                                    <div class="skills-container">
+                                        <!-- Other Skills -->
+                                        <div class="skills-box">
+                                            <!--       <h3>Other Skills</h3>
+                                            <ul>
+                                                <li>Problem-Solving</li>
+                                                <li>Team Collaboration</li>
+                                                <li>Time Management</li>
+                                                <li>Critical Thinking</li>
+                                                <li>Project Management</li>
+                                            </ul>
+                                        </div>
+
+                                        Tools
+                                        <div class="skills-box">
+                                            <h3>Tools & Technologies</h3>
+                                            <ul>
+                                                <li>Git & GitHub</li>
+                                                <li>VS Code</li>
+                                                <li>Figma</li>
+                                                <li>Postman (API Testing)</li>
+                                                <li>Netlify & Vercel (Deployment)</li>
+                                                <li>Webpack & Babel</li>
+                                            </ul>
+                                    </div>-->
+
+                                            <div style="height:0px ; margin-top: 150px;" class="title left ">
+                                                <p>Tools & Technologies</p>
+                                            </div>
+                                            <marquee behavior=" " direction="" style="margin-top: 100px;">
+
+                                                <div class="tools">
+                                                    <img src="github.png" alt="">
+                                                    <h3>Github</h3>
+
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="figma.png" alt="">
+                                                    <h3>Figma</h3>
+
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="node.png" alt="">
+                                                    <h3>Node.Js</h3>
+
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="react.png" alt="">
+                                                    <h3>React</h3>
+
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="/tailwindcss.png" alt="">
+                                                    <h3>Tailwind.CSS</h3>
+
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="/vscode.png" alt="">
+                                                    <h3>VSCode</h3>
+
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="webp.png" alt="">
+                                                    <h3>Tailwind.CSS</h3>
+
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="boots.png" alt="">
+                                                    <h3>BootStrap</h3>
+
+                                                </div>
+
+
+                                            </marquee>
+
+
+                                        </div>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="love-to-do-area">
+                        <div class="container">
+                            <div style="height:140px" class="title right ">
+                                <p>WHAT I DO</p>
+                            </div>
+                            <h2 class="text-center mb-4" style="color: #0056b3;">My services</h2>
+
+                            <div class="love-to-do">
+
+                                <div class="stickpad">
+                                    <img src="custom.jpeg" alt="">
+                                    <h4>Custom website development</h4>
+                                    <p>I will design and devolop tailored websites that meets clients specific needs and
+                                        goals.</p>
+                                </div>
+                                <div class="stickpad">
+                                    <img src="/Untitled design (1).png" alt="">
+                                    <h4>Responsive Web Design</h4>
+                                    <p>I can create mobile friendly and responsive websites that provide an optimal user
+                                        experence across various devices .</p>
+                                </div>
+                                <div class="stickpad">
+                                    <img src="ecommersee.jpeg" alt="">
+                                    <h4>E-commerce Solutions</h4>
+                                    <p>Creating online stores with integrated payment gateways, product management
+                                        systems, and secure checkout processes.</p>
+                                </div>
+
+                                <br>
+                                <div class="stickpad">
+
+                                    <img src="webapplication.png" alt="">
+
+                                    <h4> Web Application Devolpment </h4>
+                                    <p>"Developing complex web applications with interactive features and dynamic
+                                        content."</p>
+                                </div>
+                                <!--   <div class="stickpad">
+                                            <img src="" alt="">
+                                    <h4>Progressive Web Apps</h4>
+                                    <p>I can create fast, reliable and engaging PWAs that provide a native app-like experience.</p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="portfolio" class="portfolio-area">
+                        <div class="container">
+                            <div class="title left" style="height:160px">
+                                <p>My Portfolio</p>
+                            </div>
+                            <div class="portfolios">
+                                <ul class="portfolio-nav">
+                                    <li class="active">Projects</li>
+                                    <li class="changeColor"> <a href="#certificate"
+                                            style="color: green; text-decoration: none;font-size: large;">Certificates
+                                        </a> </li>
+                                </ul>
+                                <div class="portfolio-items portfolios-featured">
+                                    <div class="portfolio">
+                                        <div class="portfolio-img">
+                                        </div>
+                                        <div class="details">
+                                            <h4>
+                                                <a target="_blank" rel="noopener noreferrer"
+                                                    href="https://khan-1291.github.io/ViraBank/">ViraBank</a>
+                                            </h4>
+                                            <img id="thumb" alt="ViraBank Thumbnail" class="portfolio-img">
+
+                                            <p>ViraBank! A modern bank web app, fully responsive. It includes all
+                                                functionalities.</p>
+                                            <div class="links">
+                                                <ul>
+                                                    <li>
+                                                        <a target="_blank" rel="noopener noreferrer"
+                                                            href="https://khan-1291.github.io/ViraBank/">
+                                                            <svg stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 512 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <ul class="portfolio-tools">
+                                                <li>gatsby</li>
+                                                <li>netlify</li>
+                                                <li>ga</li>
+                                                <li>forestry</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio">
+                                        <div class="portfolio-img">
+
+                                        </div>
+                                        <div class="details">
+                                            <h4><a target="_blank" rel="noopener noreferrer"
+                                                    href="https://khan-1291.github.io/AllinOneCalculater/">Calculater</a>
+                                            </h4>
+                                            <img src="calculter.png" alt="calulater">
+
+                                            <p style="margin-top: 40px;">Calculate All in one.. <br> Age Calculater <br>
+                                                GPA Calculater</p>
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href=" https://khan-1291.github.io/AllinOneCalculater/"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 496 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://khan-1291.github.io/AllinOneCalculater/"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 512 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                </ul>
+                                            </div>
+                                            <ul class="portfolio-tools">
+                                                <li>gatsby</li>
+                                                <li>json</li>
+                                                <li>travis ci</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="portfolio">
+                                        <h4 style="margin: 20px; font-size: x-large;">
+                                            Video Player
+                                        </h4>
+                                        <div class="portfolio-img">
+
+                                            <img alt="Video Player" src="videopler.png" />
+                                        </div>
+                                        <div class="details">
+
+                                            <p>Video Player </p>
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://khan-1291.github.io/videoPlyer/"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 496 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://zonayed.js.org"><svg stroke="currentColor"
+                                                                fill="currentColor" stroke-width="0"
+                                                                viewBox="0 0 512 512" height="1em" width="1em"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                </ul>
+                                            </div>
+                                            <ul class="portfolio-tools">
+                                                <li>gatsby</li>
+                                                <li>utterances</li>
+                                                <li>travis ci</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-items portfolios-regular">
+                                    <div class="portfolio small">
+                                        <div class="details">
+                                            <h4><a target="_blank" rel="noopener noreferrer"
+                                                    href="https://khan-1291.github.io/GussNumberGame/INDEX.HTML">Guess
+                                                    the Number game</a></h4>
+                                            <p>Guess the number game ....</p>
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://khan-1291.github.io/GussNumberGame/INDEX.HTML"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 496 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://khan-1291.github.io/GussNumberGame/INDEX.HTML"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 512 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                </ul>
+                                            </div>
+                                            <ul class="portfolio-tools">
+                                                <li>express</li>
+                                                <li>mysql</li>
+                                                <li>react</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio small">
+                                        <div class="details">
+                                            <h4><a target="_blank" rel="noopener noreferrer"
+                                                    href="https://khan-1291.github.io/codeAlphaTask/">Pr System</a>
+                                            </h4>
+                                            <p>The Pr System
+                                                made for you</p>
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://khan-1291.github.io/codeAlphaTask/"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 496 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://khan-1291.github.io/codeAlphaTask/"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 512 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                </ul>
+                                            </div>
+                                            <ul class="portfolio-tools">
+                                                <li>react</li>
+                                                <li>redux</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio small">
+                                        <div class="details">
+                                            <h4><a target="_blank" rel="noopener noreferrer"
+                                                    href="https://khan-1291.github.io/Fina-assignment/">Khan
+                                                    Resturent</a>
+                                            </h4>
+                                            <p>Khan Resturent..The tasty house .. Fast Food Web page </p>
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://khan-1291.github.io/Fina-assignment/"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 496 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://khan-1291.github.io/Fina-assignment/"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 512 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                </ul>
+                                            </div>
+                                            <ul class="portfolio-tools">
+                                                <li>react</li>
+                                                <li>react hooks</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--            <div class="portfolio small">
+                                        <div class="details">
+                                            <h4><a target="_blank" rel="noopener noreferrer"
+                                                    href="https://zonayedpca.github.io/react-micro-blog/">Micro
+                                                    Blog</a>
+                                            </h4>
+                                            <p>Entirely works on the client-side, behaves like actual micro
+                                                blog,
+                                                everything handled by client</p>
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://github.com/zonayedpca/react-micro-blog"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 496 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://zonayedpca.github.io/react-micro-blog/"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 512 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                </ul>
+                                            </div>
+                                            <ul class="portfolio-tools">
+                                                <li>react</li>
+                                                <li>react router</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio small">
+                                        <div class="details">
+                                            <h4><a target="_blank" rel="noopener noreferrer"
+                                                    href="https://zonayedpca.github.io/react-mini-blog/">Mini
+                                                    Blog</a>
+                                            </h4>
+                                            <p>Entirely works on the client-side, behaves like actual blog, can
+                                                even
+                                                make posts, bookmarks</p>
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://github.com/zonayedpca/react-mini-blog"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 496 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://zonayedpca.github.io/react-mini-blog/"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 512 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                </ul>
+                                            </div>
+                                            <ul class="portfolio-tools">
+                                                <li>react</li>
+                                                <li>react router</li>
+                                                <li>draft js</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio small">
+                                        <div class="details">
+                                            <h4><a target="_blank" rel="noopener noreferrer"
+                                                    href="https://zonayedjsv1.netlify.com">PWA Blog</a></h4>
+                                            <p>A Simple blog powered by WP-Rest API and React, Progressive Web
+                                                App
+                                                supported</p>
+                                            <div class="links">
+                                                <ul>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://github.com/zonayedpca/old.js.zonayed.me"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 496 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                    <li><a target="_blank" rel="noopener noreferrer"
+                                                            href="https://zonayedjsv1.netlify.com"><svg
+                                                                stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 512 512" height="1em"
+                                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+                                                                </path>
+                                                            </svg></a></li>
+                                                </ul>
+                                            </div>
+                                            <ul class="portfolio-tools">
+                                                <li>react</li>
+                                                <li>pwa</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-action"><a
+                                        style="margin-top:15px;color:rgba(255, 255, 255, 0.85);border-color:#00cf5d;background-color:transparent"
+                                        target="__blank" rel="noopener noreferrer" class="btn"
+                                        href="https://github.com/zonayedpca">More</a></div>
+                            </div>-->
+                                </div>
+                            </div>
+
+                            <div class="containerforedu" id="certificate">
+                                <div style="height:150px;" class="title right">
+                                    <p>Education & Certificates</p>
+                                </div>
+
+                                <!-- Education Section -->
+                                <div class="section">
+                                    <button class="accordion">🎓 Bachelor's in Computer Science</button>
+                                    <div class="panel">
+                                        <p class="changeColor"><strong>Institution:</strong> Government Post Graduate
+                                            College, Mardan</p>
+                                        <p class="changeColor"><strong>Degree:</strong> Bachelor of Science in Computer
+                                            Science</p>
+                                        <p class=" changeColor"><strong>Year:</strong> Ongoing</p>
+                                    </div>
+                                </div>
+
+                                <!-- Certificates Section -->
+                                <div class="section">
+                                    <button class="accordion">📜 Certificates</button>
+                                    <div class="panel">
+                                        <div class="certificate">
+                                            <h3 class=" changeColor">HTML, CSS, and JavaScript for Web Developers -
+                                                Coursera</h3>
+                                            <img src="Coursera QY5J9YN4RLUJ (1)_page-0001.jpg"
+                                                alt="Coursera Certificate">
+                                            <a href="YOUR_COURSE_CERTIFICATE_LINK" target="_blank">View Certificate</a>
+                                        </div>
+                                        <hr>
+                                        <div class="certificate">
+                                            <h3 class=" changeColor">Responsive Web Design - FreeCodeCamp</h3>
+                                            <img src="Responsive web desighn_page-0001.jpg"
+                                                alt="FreeCodeCamp Certificate">
+                                            <a href="YOUR_FREECODECAMP_CERTIFICATE_LINK" target="_blank">View
+                                                Certificate</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Bootstrap CSS -->
+
+                            <h2 class="text-center mb-4"
+                                style="color: #0056b3; text-align: center; margin-top: 150px; ">Pricing</h2>
+                            <div style="height:140px; margin-top: -px;" class="title left">
+                                <p class="changeColor">Price Table</p>
+                            </div>
+                            <div class="pricing-container">
+                                <div class="pricing-card changeColor">
+                                    <h3>Basic</h3>
+                                    <p class="price changeColor">$50</p>
+                                    <ul class="changeColor">
+                                        <li class="changeColor">✅ 1 Static Website</li>
+                                        <li class="changeColor">✅ Responsive Design</li>
+                                        <li class="changeColor">✅ Basic SEO</li>
+                                        <li class="changeColor">❌ No Custom Features</li>
+                                    </ul>
+                                    <a href="#" class="btn">Get Started</a>
+                                </div>
+
+                                <div class="pricing-card featured">
+                                    <h3>Standard</h3>
+                                    <p class="price  class=" changeColor"">$100</p>
+                                    <ul>
+                                        <li>✅ 1 Dynamic Website</li>
+                                        <li>✅ Responsive & Interactive</li>
+                                        <li>✅ SEO Optimization</li>
+                                        <li>✅ Custom Features</li>
+                                    </ul>
+                                    <a href="#" class="btn">Get Started</a>
+                                </div>
+
+                                <div class="pricing-card">
+                                    <h3>Premium</h3>
+                                    <p class="price ">$200</p>
+                                    <ul>
+                                        <li class="changeColor">✅ E-commerce/Business Website</li>
+                                        <li class="changeColor">✅ Full UI/UX Design</li>
+                                        <li class="changeColor">✅ Advanced SEO & Security</li>
+                                        <li class="changeColor">✅ Ongoing Support</li>
+                                    </ul>
+                                    <a href="#" class="btn">Get Started</a>
+                                </div>
+                            </div>
+
+                            <!-- Testamonal    -->
+
+                            <section class="testimonials">
+                                <div style="height:140px; margin-top: 0px;" class="title right ">
+                                    <p class="changeColor">TESTIMONIALS</p>
+                                </div>
+                                <h2>What Clients Say</h2>
+                                <div class="testimonial-container">
+                                    <div class="testimonial-card">
+                                        <img src="https://via.placeholder.com/80" alt="Client Image">
+                                        <h3>Muhammad Haris</h3>
+                                        <p class="role">CEO, Tech Solutions</p>
+                                        <p class="testimonial-text">"Zohaib Khan is an exceptional developer! He built a
+                                            fully responsive website that exceeded our expectations."</p>
+                                    </div>
+
+                                    <div class="testimonial-card">
+                                        <img src="https://via.placeholder.com/80" alt="Client Image">
+                                        <h3>Arslan Islam</h3>
+                                        <p class="role">Marketing Manager</p>
+                                        <p class="testimonial-text">"Professional, creative, and highly skilled! The
+                                            website design was amazing, and the user experience was flawless."</p>
+                                    </div>
+
+                                    <div class="testimonial-card">
+                                        <img src="https://via.placeholder.com/80" alt="Client Image">
+                                        <h3>Unknown</h3>
+                                        <p class="role"></p>
+                                        <p class="testimonial-text">"Zohaib is detail-oriented and delivers top-notch
+                                            work! Highly recommended for web development projects."</p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <!-- Contact Section -->
+                            <section class="contact-section py-5">
+                                <div class="container">
+                                    <div style="height:200px;" class="title left">
+                                        <p class="changeColor">Get In touch</p>
+                                    </div>
+                                    <h2 class="text-center mb-4" style="color: #0056b3;">Get in Touch</h2>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8">
+                                            <form action="https://formspree.io/f/mldgprlv" method="POST">
+                                                <div class="mb-3">
+                                                    <label for="name" class="form-label changeColor"><i
+                                                            class="bi bi-person-fill"></i> Your
+                                                        Name</label>
+                                                    <input type="text" class="form-control" id="name" name="name"
+                                                        placeholder="Enter your name" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="email" class="form-label changeColor"><i
+                                                            class="bi bi-envelope-fill"></i>
+                                                        Email Address</label>
+                                                    <input type="email" class="form-control changeColor" id="email"
+                                                        name="email" placeholder="Enter your email" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="subject" class="form-label changeColor"><i
+                                                            class="bi bi-chat-dots-fill"></i>
+                                                        Subject</label>
+                                                    <input type="text" class="form-control changeColor" id="subject"
+                                                        name="subject" placeholder="Enter subject" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message" class="form-label changeColor"><i
+                                                            class="bi bi-pencil-fill"></i>
+                                                        Message</label>
+                                                    <textarea class="form-control changeColor" id="message"
+                                                        name="message" rows="4" placeholder="Write your message"
+                                                        required></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label changeColor"><i
+                                                        class="bi bi-file-fill"></i>
+                                                    Your file:</label>
+                                                    <input type="file" name="file" id="file"  >
+
+                                                </div>
+                                                <div class="g-recaptcha" data-sitekey="6LevVtcqAAAAAL8iuPYFdVjeVXSaMuLSfQDXnhn5"></div>
+
+                                               
+
+                                            <!-- Load reCAPTCHA script -->
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary px-4"><i
+                                                        class="bi bi-send-fill"></i> Send Message</button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <div id="contact" class="contact-area">
+
+                                <div class="container">
+                                    <div style="height:160px" class="title left ">
+                                        <p class="changeColor">Contact</p>
+                                    </div>
+                                    <div class="contact">
+                                        <div class="contact-status ">
+                                            <p class="changeColor"> As a passionate Front-End Web Developer with
+                                                expertise in ReactJS,
+                                                JavaScript, and UI/UX design, I am always excited to collaborate with
+                                                companies that value innovation and quality. If your team is looking for
+                                                someone who can build dynamic, user-friendly interfaces and enhance
+                                                digital experiences, I’d love to connect!
+
+                                                Whether you have an opportunity or just want to say hi, feel free to
+                                                reach out. Let’s build something amazing together!
+                                                just &#x27;say hi&#x27; to me.</p>
+                                            <div><a style="margin-top:25px;color:#fff;border-color:#00cf5d;background-color:red"
+                                                    target="" rel="" class="btn"
+                                                    href="/cdn-cgi/l/email-protection#d3a9bcbdb2aab6b7a3b0b293b4beb2babffdb0bcbe">Contact
+                                                    Me</a></div>
+                                        </div>
+                                        <div class="contactContaner" style=" ">
+                                            <div class="social-icons">
+                                                <a href="https://www.linkedin.com/in/zohaib-khan" target="_blank"
+                                                    class="icon-link">
+                                                    <i class="bi bi-linkedin" style=" color: blue;"></i><span
+                                                        class="changeColor"
+                                                        style="font-size: large;flex-direction: row; margin-left: 8%;margin-top: 6%;font-weight: bold;">Cheak
+                                                        Out On Linkdin</span>
+                                                </a>
+
+                                                <a href="https://facebook.com/your-profile" target="_blank"
+                                                    class="icon-link">
+                                                    <i class="bi bi-facebook" style="color: #0056b3;"></i><span
+                                                        class="changeColor"
+                                                        style="font-size: large;flex-direction: row; margin-left: 8%;margin-top: 6%;font-weight: bold;">Follow
+                                                        On Facebook</span>
+                                                </a>
+                                                <a href="mailto:zohaibkhanwebdevolper@gmail.com" class="icon-link">
+                                                    <i class="bi bi-envelope-fill" style="color:#D44638;"></i><span
+                                                        class="changeColor"
+                                                        style="font-size: large;flex-direction: row; margin-left: 8%;margin-top: 6%;font-weight: bold;">Send
+                                                        a quike Mail</span>
+                                                </a>
+                                                <a href="https://wa.me/923165657513" target="_blank" class="icon-link">
+                                                    <i class="bi bi-whatsapp" style="color: #00cf5d;"></i> <span
+                                                        class="changeColor"
+                                                        style="font-size: large;flex-direction: row; margin-left: 8%;margin-top: 6%;font-weight: bold;">Chat
+                                                        on WhatsApp</span>
+                                                </a>
+                                                <a href="https://github.com/Khan-1291/zohaibKhan" target="_blank"
+                                                    class="icon-link">
+                                                    <i class="bi bi-geo-alt" style="color: rgb(146, 47, 47);"> </i><span
+                                                        class="changeColor"
+                                                        style="font-size: large;flex-direction: row; margin-left: 8%;margin-top: 6%;font-weight: bold;">Mardan,
+                                                        Khyber-Pakhtunkhwa Pakistan</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!--     <div class="contact-details">
+                                <ul>
+                                    <li>
+                                        <h5>Email</h5>
+                                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                data-cfemail="zohaibkhanweb@gmail.com">zohaibkhanwebdevolper@gmail.com</a>
+                                            <span>(Recommended)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>WhatsApp</h5>
+                                        <p>+923165657513 <span>(Always Available)</span></p>
+                                    </li>
+                                    <li>
+                                        <h5>Social</h5>
+                                        <p>Facebook/Twitter/Instagram - @ZohaibKhan <span>(Slow response)</span></p>
+                                    </li>
+                                    <li>
+                                        <h5>Address</h5>
+                                        <p>Mardan, Khyber Pakhtunkhwa Pakistan</p>
+                                    </li>
+                                </ul>
+                            </div>-->
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            
+                            
+
+
+
+                            <div class="subscribetomail" style="margin-bottom: 40px;">
+                                <p style="font-weight: bolder; font-size: 40px;color: yellow;">👥🤝🔒Subscribe now🔒🤝👥</p>
+                                <form action="https://formspree.io/f/xqaeykqd" method="post">
+                                    <label for="Email"></label>
+                                    <input type="email" name="email" id="email" placeholder="webdevolper@gmail.com" required style="text-indent: 20px;"> <br>
+                                    <button type="submit" style="font-weight: bold;">Subscribe</button>
+                                </form>
+                            </div>
+                </main>
+
+             
+                # Make sure you're inside your portfolio project folder
+cd path/to/your/portfolio-folder  # Change this to your actual folder path
+
+# Initialize Git (if not already initialized)
+git init  
+
+# Add all files to Git
+git add .
+
+# Commit the files with a message
+git commit -m "Initial commit"
+
+# Set the main branch
+git branch -M main
+
+# Add your GitHub repository as the remote
+git remote add origin https://github.com/Khan-1291/zohaibkhanwebdevolper.git
+
+# Push your code to GitHub
+git push -u origin main
+
+
+
+               
+                <!-- Footer Section -->
+                <!-- Footer Section -->
+                <footer class="footer text-center py-3" class="footer-area">
+                    <div class="container">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/zohaib-khan" target="_blank" class="icon-link">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Khan-1291/zohaibKhan" target="_blank" class="icon-link">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://facebook.com/your-profile" target="_blank" class="icon-link">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="mailto:zohaibkhanwebdevolper@gmail.com" class="icon-link">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                            <a href="https://wa.me/923165657513" target="_blank" class="icon-link">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
+                        <p class="mt-1" style="text-align: center; margin-top: 0%;">&copy; 2025 Zohaib Khan. All Rights
+                            Reserved.</p>
+                        <p class="mt-1" style="text-align: center; margin-top: 90px;">
+                        <address style="text-align: center;">Mardan, Khyber-Pakhtunkhwa, Pakistan</address>
+                        </p>
+
+                    </div>
+                </footer>
+
+
+
+
+
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                <script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
+
+                <script data-cfasync="false"
+                    src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath = "/";/*]]>*/</script>
+                <script
+                    id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping = { "polyfill": ["/polyfill-e1ddb3f078e444410f92.js"], "app": ["/app-ba68181312375a78c2ea.js"], "component---src-pages-404-js": ["/component---src-pages-404-js-7b790585713d41fec155.js"], "component---src-pages-index-js": ["/component---src-pages-index-js-41909d2d5675f1ea9190.js"] };/*]]>*/</script>
+                <script src="/polyfill-e1ddb3f078e444410f92.js" nomodule=""></script>
+                <script src="/component---src-pages-index-js-41909d2d5675f1ea9190.js" async=""></script>
+                <script src="/commons-dbe3146c4d8d56917290.js" async=""></script>
+                <script src="/1bfc9850-1153522eb3af6586f5e1.js" async=""></script>
+                <script src="/styles-2d82ac8e3afc0c213061.js" async=""></script>
+                <script src="/app-ba68181312375a78c2ea.js" async=""></script>
+                <script src="/framework-fd2b85530eec85104a39.js" async=""></script>
+                <script src="/webpack-runtime-e70f41d2746859ee9c2c.js" async=""></script>
+                <script defer
+                    src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+                    integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+                    data-cf-beacon='{"rayId":"90fdfb67fa563f71","version":"2025.1.0","r":1,"token":"07dd87d6e9204d9580cb91c1c02ac669","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
+                    crossorigin="anonymous"></script>
+
+                <script src="home.js"></script>
+</body>
+
+</html>
