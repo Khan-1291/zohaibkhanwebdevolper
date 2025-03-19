@@ -3,12 +3,12 @@
   "name": "Zohaib Khan | Frontend Web Developer",
   "icons": [
     {
-      "src": "Safeimagekit-resized-img.jpg",
+      "src": "z.png",
       "sizes": "512x512",
-      "type": "image/jpg"
+      "type": "image/png"
     }
   ],
-  "start_url": "https://khan-1291.github.io/zohaibkhanwebdevolper/",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#1d293a",
   "background_color": "#ffffff"
