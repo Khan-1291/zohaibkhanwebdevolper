@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://khan-1291.github.io/zohaibkhanwebdevolper/sitemap.xml
